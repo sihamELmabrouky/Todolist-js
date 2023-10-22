@@ -12,14 +12,14 @@ addButton.addEventListener("click", (e) => {
     todo.appendChild(li);
 
     let chechButton = document.createElement("button");
-    chechButton.innerHTML = ` <span>hhhh</span>`;
+    chechButton.innerHTML = ` <span>check</span>`;
     chechButton.classList.add("todo-check");
-    todo.appendChild(chechButton);
+    li.appendChild(chechButton);
 
     let deleteButton = document.createElement("button");
-    deleteButton.innerHTML = ` <span>nkkkkkkkkkkkk</span>`;
+    deleteButton.innerHTML = ` <span>delete</span>`;
     deleteButton.classList.add("todo-delete");
-    todo.appendChild(deleteButton);
+    li.appendChild(deleteButton);
 
     if (todoInput.value === "") {
         alert("please Enter some text");
@@ -41,7 +41,7 @@ todoContainer.addEventListener("click", (e) => {
     }
     if (target.classList.contains("todo-check")) {
         let item = target.parentElement;
-        item.classList.toggle("complted");
+        item.classList.toggle("completed");
 
     }
 
