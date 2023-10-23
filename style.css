@@ -1,8 +1,8 @@
 body {
     background: linear-gradient(#00cc9c, #ff80d3);
-    background-repeat: no-repeat;
+    */ background-repeat: no-repeat;
     height: 100vh;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     display: flex;
     justify-content: center;
     font-family: cursive;
@@ -21,13 +21,17 @@ h1 {
 }
 
 .wrapper {
+    padding: 20px;
     width: 500px;
+
 }
 
 .input-container {
     display: flex;
     justify-content: center;
     height: 52px;
+
+    /* margin-left: 60px; */
 }
 
 input,
@@ -42,6 +46,7 @@ button {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     width: 320px;
+
 }
 
 .input-container button {
@@ -64,6 +69,7 @@ button {
     padding: 0;
     height: 45px;
 
+    /* margin-left: 60px; */
 }
 
 .todo-container .todo {
@@ -73,6 +79,8 @@ button {
     flex-direction: row;
     background: #fff;
     margin-top: 1px;
+    width: 100%;
+    /* margin: 20px; */
 
 
 
@@ -135,4 +143,20 @@ button {
     margin: 0;
     font-size: 14px;
     /* line-height: 1.5; */
+}
+
+@media (max-width : 768px) {
+    .input-container {
+        margin-left: 60px;
+
+    }
+
+    .todo-container {
+        margin-left: 60px;
+
+    }
+
+    .todo-container .todo {
+        width: 100%;
+    }
 }
