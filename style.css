@@ -2,7 +2,7 @@ body {
     background: linear-gradient(#00cc9c, #ff80d3);
     */ background-repeat: no-repeat;
     height: 100vh;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     font-family: cursive;
